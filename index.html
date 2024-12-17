@@ -1,0 +1,12 @@
+function compareTriplets(a,b){
+    let alicescore=0;
+    let bobscore=0
+    for(let i=0; i<3; i++) {
+        if( a[i]>b[i]) {
+            alicescore++;
+        }else if(a[i]<b[i]) {
+            bobscore++
+        }
+    }
+    return [alicescore, bobscore]
+} 
